@@ -19,11 +19,12 @@ public class JobTest {
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
     }
 
-    @Test public void testSettingJobId() {
+    @Test
+    public void testSettingJobId() {
+        Job aJob = new Job();
+        Job bJob = new Job();
+        assertNotEquals(aJob.getId(), bJob.getId());
 
-        assertEquals(1, jobOne.getId());
-        assertEquals(2, jobTwo.getId());
-        assertEquals(3, jobThree.getId());
     }
     @Test
     public void testJobConstructorSetsAllFields(){
