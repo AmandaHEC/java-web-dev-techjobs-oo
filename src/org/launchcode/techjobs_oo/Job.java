@@ -29,6 +29,11 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
+    public String toString(){
+        return "ID: " + this.getId() + " " + "\nName: " + this.getName() + " " + "\nEmployer: " + this.getEmployer() + " " +
+                "\nLocation: " + this.getLocation() + " " + "\nPosition Type: " + this.getPositionType() + " " +
+                "\nCore Competency: " + this.getCoreCompetency() + " ";
+    }
 //^^MINE
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
